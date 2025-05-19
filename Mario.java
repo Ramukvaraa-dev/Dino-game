@@ -28,13 +28,13 @@ public class DinoGame extends JPanel implements ActionListener, KeyListener {
     public DinoGame() {
         dino = new Rectangle(100, HEIGHT - 150, 50, 50);
         try {
-            dinoImg = ImageIO.read(new File("Python/More Stuff (In Stuff)/Mario/Dino.png"));
+            dinoImg = ImageIO.read(new File("Downloads/Dino.png"));
             dinoImg = resizeImage(dinoImg, dino.width, dino.height);
         } catch (IOException e) {
             e.printStackTrace();
         }
         try {
-            obstacleImg = ImageIO.read(new File("Python/More Stuff (In Stuff)/Mario/Cacti.png"));
+            obstacleImg = ImageIO.read(new File("Downloads/Cacti.png"));
             obstacleImg = resizeImage(obstacleImg, OBSTACLE_WIDTH, OBSTACLE_HEIGHT);
         } catch (IOException e) {
             e.printStackTrace();
